@@ -300,6 +300,11 @@ button:focus {
       margin-top: -6px;
       right: 20px; }
 
+
+      #imgPrincipal_OC{
+        width: 613px;
+        height: 677px;
+      }
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Home Banner Area css
@@ -866,6 +871,8 @@ article{
       opacity: 1; }
     .single-post-area .navigation-area .nav-left:hover .thumb img {
       opacity: .5; }
+
+
     @media (max-width: 767px) {
       .single-post-area .navigation-area .nav-left {
         margin-bottom: 30px; } }
@@ -884,6 +891,7 @@ article{
       opacity: 1; }
     .single-post-area .navigation-area .nav-right:hover .thumb img {
       opacity: .5; }
+
 @media (max-width: 991px) {
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px; } }
@@ -893,6 +901,8 @@ article{
   border: 1px solid #eee;
   padding: 50px 30px;
   margin-top: 50px; }
+
+
   @media (max-width: 414px) {
     .comments-area {
       padding: 50px 8px; } }
@@ -912,6 +922,8 @@ article{
       padding-bottom: 0px; }
     .comments-area .comment-list.left-padding {
       padding-left: 25px; }
+
+
     @media (max-width: 413px) {
       .comments-area .comment-list .single-comment h5 {
         font-size: 12px; }
@@ -956,12 +968,18 @@ article{
     color: #222222; }
   .comment-form .name {
     padding-left: 0px; }
+
+
     @media (max-width: 767px) {
       .comment-form .name {
         padding-right: 0px;
         margin-bottom: 1rem; } }
+
+
   .comment-form .email {
     padding-right: 0px; }
+
+
     @media (max-width: 991px) {
       .comment-form .email {
         padding-left: 0px; } }
