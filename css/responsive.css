@@ -85,6 +85,10 @@
 @media (max-width:991px){
 	/* Main Menu Area css
 	============================================================================================ */
+	#imgPrincipal_OC{
+		width: 100%;
+		height: auto;
+	}
     .navbar-toggler {
         border: none;
         border-radius: 0px;
