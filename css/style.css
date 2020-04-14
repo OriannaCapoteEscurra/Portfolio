@@ -874,6 +874,9 @@ article{
 
 
     @media (max-width: 767px) {
+      #MyLogo{
+        content: url("../img/logo2-white.png");
+      }
       .single-post-area .navigation-area .nav-left {
         margin-bottom: 30px; } }
   .single-post-area .navigation-area .nav-right {
@@ -2781,7 +2784,7 @@ h6 {
     .personal_text .personal_social li a {
       line-height: 40px;
       width: 40px;
-      background: #e8e8e8;
+      background: #c2bebe;
       border-radius: 5px;
       display: inline-block;
       text-align: center;
