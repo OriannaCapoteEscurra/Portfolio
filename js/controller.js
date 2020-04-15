@@ -1,17 +1,9 @@
-(function(){
-    'use_strict'
 
-    angular
-        .module('MyPortfolio')
-        .controller('MyPortfolio',MyPortfolio);
+function scrollToSection(id){
+    var elmnt = document.getElementById(id);
+    elmnt.scrollIntoView(true);
 
-    MyPortfolio.$inject = ['AuditService', '$state'];
-    function MyPortfolio(AuditService, $state){
-        var vm = this;
-
-        vm.Prueba = function(){
-            console.log("Probandoooooooooooooooooooooooooooooooooooooooooooooooooooooooooo");
-        }
-
-    };
-})();
+    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", id);
+    console.log("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", elmnt);
+    console.log(elmnt.scrollIntoView(true));
+}

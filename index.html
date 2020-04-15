@@ -40,10 +40,10 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item active"><a class="nav-link" href="index.html"> Home </a></li> 
-                            <li class="nav-item"><a class="nav-link" href="about-us.html"> Acerca de mi </a></li> 
-                            <li class="nav-item"><a class="nav-link" href="services.html"> Conocimientos </a></li> 
-                            <li class="nav-item"><a class="nav-link" href="services.html"> Portafolio </a></li> 
-                            <li class="nav-item"><a class="nav-link" href="contact.html"> Contactame </a></li> 
+                            <li class="nav-item" onclick="scrollToSection('aboutMe')"><a class="nav-link" href="#" > Acerca de mi </a></li> 
+                            <li class="nav-item" onclick="scrollToSection('knows')"><a class="nav-link" href="#" > Conocimientos </a></li> 
+                            <li class="nav-item" onclick="scrollToSection('portfolio')"><a class="nav-link" href="#" > Portafolio </a></li> 
+                            <li class="nav-item" onclick="scrollToSection('trayectoria')"><a class="nav-link" href="#" > Trayectoria </a></li> 
                         </ul>
                     </div> 
                 </div>
@@ -54,7 +54,7 @@
 <!--================ Menu =================-->
         
         <!--================ Datos personales =================-->
-        <section class="home_banner_area">
+        <section class="home_banner_area" id="aboutMe">
            	<div class="container box_1620">
            		<div class="banner_inner d-flex align-items-center">
 					<div class="banner_content">
@@ -87,27 +87,35 @@
         </section>
         <!--================ End Home Banner Area =================-->
         
-        <!--================ Cualidades tecnicas =================-->
-        <section class="welcome_area p_120">
+		<!--================ Cualidades tecnicas =================-->
+	<div id="knows">
+        <section class="welcome_area p_120" >
         	<div class="container">
         		<div class="row welcome_inner">
         			<div class="col-lg-6">
         				<div class="welcome_text">
-        					<h4>Acerca de mi</h4>
-        					<p>Actualmente soy estudiante de Computación en la Universidad Central de Venezuela, cursando el 9no semestre de la carrera, es decir en la construcción de mi trabajo especial de grado o tesis, la cual consiste en medir (cuantitativas y cualitativas) las diferencias y semejanzas que poseen los frameworks de front-end mas populares actualmente (Angular, Vue, React y Rocket).</p>
-        					<div class="row">
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="fa fa-file-code-o"></i>
-        								<h4>2 años y medio</h4>
-        								<p>Desarrollador front-end</p>
-        							</div>
-        						</div>
+        					<h4>Conocimientos</h4>
+        					<p>
+								Actualmente soy una estudiante de la Universidad Central de Venezuela, en la que me encuentro cursando el 9no semestre
+								de la carrera, lo que implica que me encuentro en la elaboración de mi trabajo especial de grado a través del cual busco 
+								medir las diferencias y semejanzas (cualitativas y cuantitativas) que poseen los distintos frameworks front-end más utilizados
+								(Angular, Vue, React y Rocket) con la finalidad de generar una guía que le otorgue la capacidad a los programadores de poder 
+								seleccionar el framework óptimo según los requerimientos de cualquier aplicación. Dicho trabajo me ha permitido adquirir múltiples 
+								conocimientos y buenas prácticas en los lenguajes previamente mencionados.
+							</p>
+        					<div class="row">        						
         						<div class="col-md-4">
         							<div class="wel_item">
         								<i class="fa fa-globe"></i>
         								<h4>1 año</h4>
         								<p>Desarrollador web</p>
+        							</div>
+								</div>
+								<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="fa fa-file-code-o"></i>
+        								<h4>2 años</h4>
+        								<p>Desarrollador front-end</p>
         							</div>
         						</div>
         						<div class="col-md-4">
@@ -184,11 +192,12 @@
         			</div>
         		</div>
         	</div>
-        </section>
+		</section>
+	</div>
         <!--================ End Cualidades tecnicas =================-->
         
         <!--================ Mi trayectoria (academica y laboral) =================-->
-        <section class="mytabs_area p_120">
+        <section class="mytabs_area p_120" id="trayectoria">
         	<div class="container">
         		<div class="tabs_inner">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -196,7 +205,7 @@
 							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Experiencia Laboral</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Logros Académicos</a>
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Estudios</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
@@ -206,7 +215,7 @@
 									<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p> 2016 a la Actualidad </p>
+											<p> Sep. 2016 hasta la Act. </p>
 										</div>
 										<div class="media-body">
 											<h4>Universidad Central de Venezuela </h4>
@@ -258,7 +267,7 @@
 									<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p>Nov. 2014 a la Actualidad</p>
+											<p>Nov. 2014 hasta la Act.</p>
 										</div>
 										<div class="media-body">
 											<h4>Universidad Central de Venezuela</h4>
@@ -299,19 +308,10 @@
         <!--================End Mi trayectoria (academica y laboral) =================-->
         
         <!--================ Proyectos en los que he participado =================-->
-        <section class="home_gallery_area p_120">
+        <section class="home_gallery_area p_120" id="portfolio">
         	<div class="container">
         		<div class="main_title">
         			<h2>Proyectos en los que he participado</h2>        			
-        		</div>
-        		<div class="isotope_fillter">
-        			<ul class="gallery_filter list">
-						<li ><a href="detailGdDD.html">GdDD</a></li> <!-- class="active" data-filter="*" -->
-						<li ><a href="#">Prueba técnica</a></li> <!-- data-filter=".brand" -->
-						<li ><a href="#">Trivia</a></li> <!-- data-filter=".creative" -->
-						<li ><a href="#">EAC</a></li> <!-- data-filter=".design" -->
-						<li ><a href="#">Brick</a></li> <!-- data-filter=".manipul" -->
-					</ul>
         		</div>
         	</div>
         	<div class="container">
@@ -410,21 +410,30 @@
         				<div class="feature_item">
         					<i class="fa fa-smile-o"></i>
         					<h4>UX</h4>
-        					<p>Considero de la usabilidad en todo proyecto es importante, una aplicación con buena UX sera rcomendada a otros usuarios, teniendo así un mayor alcance.</p>
+        					<p>
+								Considero que la usabilidad en todo proyecto es importante, una aplicación con buena UX será recomendada a otros usuarios, 
+								teniendo así un mayor alcance y una fácil utilización de sus módulos o funciones.
+							</p>
         				</div>
         			</div>
         			<div class="col-lg-4 col-md-6">
         				<div class="feature_item">
         					<i class="fa fa-check-circle-o "></i>
         					<h4>Buenas Practicas</h4>
-        					<p>Sean proyectos a pequeña o grande escala deben implmentar buenas practicas de programación, entre ellas la documentación del código.</p>
+        					<p>
+								Sean proyectos a pequeña o grande escala deben implementar buenas prácticas de programación, entre ellas la documentación del código, 
+								la reutilización del mismo, entre otras. <br> <br>
+							</p>
         				</div>
         			</div>
         			<div class="col-lg-4 col-md-6">
         				<div class="feature_item">
         					<i class="fa fa-mobile"></i>
-        					<h4>Responsive</h4>
-        					<p>Cada vez mas los usuarios usan mas un dispositivo movil, por lo que considero importante una aplicación adaptable a cualquier tamaño de pantalla.</p>
+        					<h4>Responsive Design</h4>
+        					<p>
+								Cada vez más usuarios utilizan dispositivos móviles para realizar tareas diarias. Por lo que se considera 
+								importante que el diseño de las aplicaciones sean capaz de adaptarse a cualquier dispositivo.
+							</p>
         				</div>
         			</div>
         		</div>
